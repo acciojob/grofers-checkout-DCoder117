@@ -14,7 +14,7 @@ const getSum = () => {
 
     let row = document.createElement("tr");
     let cell = document.createElement("td");
-
+	cell.colSpan = 2;
     cell.textContent = "Total sum = " + sum;
 
     row.appendChild(cell);
