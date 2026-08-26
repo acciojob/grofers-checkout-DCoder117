@@ -7,7 +7,7 @@ const getSum = () => {
   let prices = document.querySelectorAll(".price");
 	let sum;
 	for(let i = 0; i < prices.length; i++){
-		sum += prices[i];
+		sum += Number(prices[i].textContent);
 	}
     let table = document.querySelector("table");
 
